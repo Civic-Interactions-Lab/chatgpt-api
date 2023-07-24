@@ -1,7 +1,7 @@
-import Keyv from 'keyv';
+import * as Keyv from 'keyv';
 
 type Role = 'user' | 'assistant' | 'system';
-type FetchFn = typeof fetch;
+type FetchFn = any;
 type ChatGPTAPIOptions = {
     apiKey: string;
     /** @defaultValue `'https://api.openai.com'` **/

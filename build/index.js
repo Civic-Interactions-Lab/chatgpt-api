@@ -1,4 +1,5 @@
 // src/chatgpt-api.ts
+import fetch from 'node-fetch'
 import Keyv from "keyv";
 import pTimeout from "p-timeout";
 import QuickLRU from "quick-lru";
@@ -17,9 +18,6 @@ var ChatGPTError = class extends Error {
 var openai;
 ((openai2) => {
 })(openai || (openai = {}));
-
-// src/fetch.ts
-var fetch = globalThis.fetch;
 
 // src/fetch-sse.ts
 import { createParser } from "eventsource-parser";
